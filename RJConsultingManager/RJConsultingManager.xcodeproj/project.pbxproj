@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F14EBC622DEE4B70004091FE /* RJConsultingManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC612DEE4B70004091FE /* RJConsultingManagerApp.swift */; };
+		F14EBC662DEE4B73004091FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14EBC652DEE4B73004091FE /* Assets.xcassets */; };
+		F14EBC692DEE4B73004091FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14EBC682DEE4B73004091FE /* Preview Assets.xcassets */; };
+		F14EBC6B2DEE4B73004091FE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC6A2DEE4B73004091FE /* Persistence.swift */; };
+		F14EBC6E2DEE4B73004091FE /* RJConsultingManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC6C2DEE4B73004091FE /* RJConsultingManager.xcdatamodeld */; };
+		F14EBC762DEE4DC1004091FE /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC752DEE4DC1004091FE /* ProjectViewModel.swift */; };
+		F14EBC792DEE4DF7004091FE /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC782DEE4DF7004091FE /* ProjectListView.swift */; };
+		F14EBC7B2DEE4E72004091FE /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC7A2DEE4E72004091FE /* AddProjectView.swift */; };
+		F14EBC7D2DEE4E96004091FE /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC7C2DEE4E96004091FE /* TaskListView.swift */; };
+		F14EBC7F2DEE4EE6004091FE /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC7E2DEE4EE6004091FE /* AddTaskView.swift */; };
+		F14EBC812DEE5E34004091FE /* ClientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC802DEE5E34004091FE /* ClientListView.swift */; };
+		F14EBC832DEE5E58004091FE /* AddClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC822DEE5E58004091FE /* AddClientView.swift */; };
+		F14EBC852DEE5E6E004091FE /* ClientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC842DEE5E6E004091FE /* ClientDetailView.swift */; };
+		F14EBC872DEE6103004091FE /* ConsultantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC862DEE6103004091FE /* ConsultantListView.swift */; };
+		F14EBC8B2DEE617B004091FE /* AddConsultantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC8A2DEE617B004091FE /* AddConsultantView.swift */; };
+		F14EBC912DEE6545004091FE /* FileStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC902DEE6545004091FE /* FileStorageManager.swift */; };
+		F14EBC932DEE6566004091FE /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC922DEE6566004091FE /* DocumentPicker.swift */; };
+		F14EBC952DEE669C004091FE /* DocumentPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC942DEE669B004091FE /* DocumentPreview.swift */; };
+		F14EBC982DEE66FB004091FE /* IdentifiableURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC972DEE66FB004091FE /* IdentifiableURL.swift */; };
+		F14EBC9B2DEE692C004091FE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC9A2DEE692C004091FE /* DashboardView.swift */; };
+		F14EBC9E2DEE6951004091FE /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC9D2DEE6951004091FE /* SummaryCard.swift */; };
+		F14EBCA02DEE6961004091FE /* DashboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBC9F2DEE6961004091FE /* DashboardButton.swift */; };
+		F14EBCA82DEEA991004091FE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBCA72DEEA991004091FE /* ProfileView.swift */; };
+		F14EBCAF2DEEAB58004091FE /* TopBarProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBCAE2DEEAB58004091FE /* TopBarProfileButtonView.swift */; };
+		F14EBCB12DEEAE34004091FE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBCB02DEEAE34004091FE /* MainTabView.swift */; };
+		F14EBCBC2DEEB2F7004091FE /* ConsultantPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EBCBB2DEEB2F7004091FE /* ConsultantPerformance.swift */; };
+		F1E0D1082DF0F1F800EF1083 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1072DF0F1F800EF1083 /* ProjectDetailView.swift */; };
+		F1E0D10A2DF1013300EF1083 /* ConsultantMultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1092DF1013300EF1083 /* ConsultantMultiPicker.swift */; };
+		F1E0D10C2DF10E2000EF1083 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D10B2DF10E2000EF1083 /* EditProjectView.swift */; };
+		F1E0D10E2DF115AB00EF1083 /* ProjectTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D10D2DF115AB00EF1083 /* ProjectTasksView.swift */; };
+		F1E0D1102DF115BE00EF1083 /* ProjectDocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D10F2DF115BE00EF1083 /* ProjectDocumentsView.swift */; };
+		F1E0D1122DF115CB00EF1083 /* ProjectConsultantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1112DF115CB00EF1083 /* ProjectConsultantsView.swift */; };
+		F1E0D1142DF2414500EF1083 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1132DF2414400EF1083 /* TaskDetailView.swift */; };
+		F1E0D11A2DF34B1800EF1083 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D1192DF34B1800EF1083 /* FirebaseAuth */; };
+		F1E0D11C2DF34B2200EF1083 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D11B2DF34B2200EF1083 /* FirebaseFirestore */; };
+		F1E0D11F2DF34BFF00EF1083 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D11E2DF34BFF00EF1083 /* LoginView.swift */; };
+		F1E0D1262DF3A27B00EF1083 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1252DF3A27B00EF1083 /* AuthViewModel.swift */; };
+		F1E0D1292DF3A39100EF1083 /* AdminMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1282DF3A39100EF1083 /* AdminMainTabView.swift */; };
+		F1E0D12C2DF3A3D900EF1083 /* ConsultantMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D12B2DF3A3D900EF1083 /* ConsultantMainTabView.swift */; };
+		F1E0D12E2DF3A6C800EF1083 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E0D12D2DF3A6C800EF1083 /* GoogleService-Info.plist */; };
+		F1E0D1302DF3A95100EF1083 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D12F2DF3A95100EF1083 /* SignupView.swift */; };
+		F1E0D1322DF5EB2E00EF1083 /* MyTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1312DF5EB2E00EF1083 /* MyTasksView.swift */; };
+		F1E0D1342DF5EB4700EF1083 /* MyProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1332DF5EB4700EF1083 /* MyProjectsView.swift */; };
+		F1E0D1382DF5EDE300EF1083 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1372DF5EDE300EF1083 /* TaskModel.swift */; };
+		F1E0D13B2DF5EE1200EF1083 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D13A2DF5EE1200EF1083 /* TaskViewModel.swift */; };
+		F1E0D13D2DF5EF4800EF1083 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D13C2DF5EF4800EF1083 /* ProjectModel.swift */; };
+		F1E0D13F2DF744AB00EF1083 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D13E2DF744AB00EF1083 /* FirebaseFirestoreSwift-Beta */; };
+		F1E0D1412DF74D8300EF1083 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1402DF74D8300EF1083 /* ClientModel.swift */; };
+		F1E0D1432DF7781900EF1083 /* ConsultantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1422DF7781900EF1083 /* ConsultantModel.swift */; };
+		F1E0D1472DF9E04A00EF1083 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F1E0D1462DF9E04A00EF1083 /* FirebaseStorage */; };
+		F1E0D1492DF9E15200EF1083 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D1482DF9E15200EF1083 /* DocumentModel.swift */; };
+		F1E0D14B2DFB943E00EF1083 /* ConsultantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0D14A2DFB943D00EF1083 /* ConsultantDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F14EBC5E2DEE4B6F004091FE /* RJConsultingManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJConsultingManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14EBC612DEE4B70004091FE /* RJConsultingManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJConsultingManagerApp.swift; sourceTree = "<group>"; };
+		F14EBC652DEE4B73004091FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F14EBC682DEE4B73004091FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F14EBC6A2DEE4B73004091FE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F14EBC6D2DEE4B73004091FE /* RJConsultingManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RJConsultingManager.xcdatamodel; sourceTree = "<group>"; };
+		F14EBC752DEE4DC1004091FE /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		F14EBC782DEE4DF7004091FE /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		F14EBC7A2DEE4E72004091FE /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		F14EBC7C2DEE4E96004091FE /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		F14EBC7E2DEE4EE6004091FE /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		F14EBC802DEE5E34004091FE /* ClientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListView.swift; sourceTree = "<group>"; };
+		F14EBC822DEE5E58004091FE /* AddClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientView.swift; sourceTree = "<group>"; };
+		F14EBC842DEE5E6E004091FE /* ClientDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailView.swift; sourceTree = "<group>"; };
+		F14EBC862DEE6103004091FE /* ConsultantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantListView.swift; sourceTree = "<group>"; };
+		F14EBC8A2DEE617B004091FE /* AddConsultantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConsultantView.swift; sourceTree = "<group>"; };
+		F14EBC902DEE6545004091FE /* FileStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageManager.swift; sourceTree = "<group>"; };
+		F14EBC922DEE6566004091FE /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		F14EBC942DEE669B004091FE /* DocumentPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPreview.swift; sourceTree = "<group>"; };
+		F14EBC972DEE66FB004091FE /* IdentifiableURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableURL.swift; sourceTree = "<group>"; };
+		F14EBC9A2DEE692C004091FE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		F14EBC9D2DEE6951004091FE /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
+		F14EBC9F2DEE6961004091FE /* DashboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardButton.swift; sourceTree = "<group>"; };
+		F14EBCA72DEEA991004091FE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F14EBCAE2DEEAB58004091FE /* TopBarProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarProfileButtonView.swift; sourceTree = "<group>"; };
+		F14EBCB02DEEAE34004091FE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F14EBCBB2DEEB2F7004091FE /* ConsultantPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantPerformance.swift; sourceTree = "<group>"; };
+		F1E0D1072DF0F1F800EF1083 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		F1E0D1092DF1013300EF1083 /* ConsultantMultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantMultiPicker.swift; sourceTree = "<group>"; };
+		F1E0D10B2DF10E2000EF1083 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		F1E0D10D2DF115AB00EF1083 /* ProjectTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTasksView.swift; sourceTree = "<group>"; };
+		F1E0D10F2DF115BE00EF1083 /* ProjectDocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDocumentsView.swift; sourceTree = "<group>"; };
+		F1E0D1112DF115CB00EF1083 /* ProjectConsultantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectConsultantsView.swift; sourceTree = "<group>"; };
+		F1E0D1132DF2414400EF1083 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		F1E0D11E2DF34BFF00EF1083 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F1E0D1252DF3A27B00EF1083 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F1E0D1282DF3A39100EF1083 /* AdminMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMainTabView.swift; sourceTree = "<group>"; };
+		F1E0D12B2DF3A3D900EF1083 /* ConsultantMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantMainTabView.swift; sourceTree = "<group>"; };
+		F1E0D12D2DF3A6C800EF1083 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1E0D12F2DF3A95100EF1083 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		F1E0D1312DF5EB2E00EF1083 /* MyTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksView.swift; sourceTree = "<group>"; };
+		F1E0D1332DF5EB4700EF1083 /* MyProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectsView.swift; sourceTree = "<group>"; };
+		F1E0D1372DF5EDE300EF1083 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		F1E0D13A2DF5EE1200EF1083 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		F1E0D13C2DF5EF4800EF1083 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		F1E0D1402DF74D8300EF1083 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		F1E0D1422DF7781900EF1083 /* ConsultantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantModel.swift; sourceTree = "<group>"; };
+		F1E0D1482DF9E15200EF1083 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		F1E0D14A2DFB943D00EF1083 /* ConsultantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F14EBC5B2DEE4B6F004091FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E0D13F2DF744AB00EF1083 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				F1E0D1472DF9E04A00EF1083 /* FirebaseStorage in Frameworks */,
+				F1E0D11A2DF34B1800EF1083 /* FirebaseAuth in Frameworks */,
+				F1E0D11C2DF34B2200EF1083 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F14EBC552DEE4B6F004091FE = {
+			isa = PBXGroup;
+			children = (
+				F14EBC602DEE4B6F004091FE /* RJConsultingManager */,
+				F14EBC5F2DEE4B6F004091FE /* Products */,
+				F1E0D1182DF34B1800EF1083 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F14EBC5F2DEE4B6F004091FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC5E2DEE4B6F004091FE /* RJConsultingManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F14EBC602DEE4B6F004091FE /* RJConsultingManager */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC612DEE4B70004091FE /* RJConsultingManagerApp.swift */,
+				F14EBC962DEE66F2004091FE /* Models */,
+				F14EBC772DEE4DDD004091FE /* Views */,
+				F14EBC742DEE4DAD004091FE /* View Models */,
+				F14EBC652DEE4B73004091FE /* Assets.xcassets */,
+				F14EBC6A2DEE4B73004091FE /* Persistence.swift */,
+				F1E0D12D2DF3A6C800EF1083 /* GoogleService-Info.plist */,
+				F14EBC672DEE4B73004091FE /* Preview Content */,
+			);
+			path = RJConsultingManager;
+			sourceTree = "<group>";
+		};
+		F14EBC672DEE4B73004091FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC682DEE4B73004091FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F14EBC742DEE4DAD004091FE /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D1392DF5EE0800EF1083 /* Tasks */,
+				F1E0D1242DF3A1F000EF1083 /* Auth */,
+				F14EBCBA2DEEB2ED004091FE /* Performance */,
+				F14EBC9C2DEE6944004091FE /* DashBoard */,
+				F14EBC8F2DEE6539004091FE /* Document Management */,
+				F14EBC752DEE4DC1004091FE /* ProjectViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F14EBC772DEE4DDD004091FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D12A2DF3A3CC00EF1083 /* Consultant */,
+				F1E0D1272DF3A38300EF1083 /* Admin */,
+				F1E0D11D2DF34BF400EF1083 /* Login */,
+				F14EBC992DEE691D004091FE /* DashBoard */,
+				F14EBC892DEE614D004091FE /* Resource Allocation & Scheduling */,
+				F14EBC882DEE6108004091FE /* Client Interaction & Communication */,
+				F14EBCAC2DEEAADF004091FE /* Project */,
+				F14EBCAD2DEEAAF0004091FE /* Task Management */,
+				F14EBCA92DEEAA9F004091FE /* Profile */,
+				F14EBCB02DEEAE34004091FE /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F14EBC882DEE6108004091FE /* Client Interaction & Communication */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC842DEE5E6E004091FE /* ClientDetailView.swift */,
+				F14EBC822DEE5E58004091FE /* AddClientView.swift */,
+				F14EBC802DEE5E34004091FE /* ClientListView.swift */,
+			);
+			path = "Client Interaction & Communication";
+			sourceTree = "<group>";
+		};
+		F14EBC892DEE614D004091FE /* Resource Allocation & Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC862DEE6103004091FE /* ConsultantListView.swift */,
+				F14EBC8A2DEE617B004091FE /* AddConsultantView.swift */,
+				F1E0D1092DF1013300EF1083 /* ConsultantMultiPicker.swift */,
+				F1E0D14A2DFB943D00EF1083 /* ConsultantDetailView.swift */,
+			);
+			path = "Resource Allocation & Scheduling";
+			sourceTree = "<group>";
+		};
+		F14EBC8F2DEE6539004091FE /* Document Management */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC902DEE6545004091FE /* FileStorageManager.swift */,
+				F14EBC922DEE6566004091FE /* DocumentPicker.swift */,
+				F14EBC942DEE669B004091FE /* DocumentPreview.swift */,
+			);
+			path = "Document Management";
+			sourceTree = "<group>";
+		};
+		F14EBC962DEE66F2004091FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC972DEE66FB004091FE /* IdentifiableURL.swift */,
+				F14EBC6C2DEE4B73004091FE /* RJConsultingManager.xcdatamodeld */,
+				F1E0D1372DF5EDE300EF1083 /* TaskModel.swift */,
+				F1E0D13C2DF5EF4800EF1083 /* ProjectModel.swift */,
+				F1E0D1402DF74D8300EF1083 /* ClientModel.swift */,
+				F1E0D1422DF7781900EF1083 /* ConsultantModel.swift */,
+				F1E0D1482DF9E15200EF1083 /* DocumentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F14EBC992DEE691D004091FE /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC9A2DEE692C004091FE /* DashboardView.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		F14EBC9C2DEE6944004091FE /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC9D2DEE6951004091FE /* SummaryCard.swift */,
+				F14EBC9F2DEE6961004091FE /* DashboardButton.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		F14EBCA92DEEAA9F004091FE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBCA72DEEA991004091FE /* ProfileView.swift */,
+				F14EBCAE2DEEAB58004091FE /* TopBarProfileButtonView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F14EBCAC2DEEAADF004091FE /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC782DEE4DF7004091FE /* ProjectListView.swift */,
+				F14EBC7A2DEE4E72004091FE /* AddProjectView.swift */,
+				F1E0D1072DF0F1F800EF1083 /* ProjectDetailView.swift */,
+				F1E0D10B2DF10E2000EF1083 /* EditProjectView.swift */,
+				F1E0D10D2DF115AB00EF1083 /* ProjectTasksView.swift */,
+				F1E0D10F2DF115BE00EF1083 /* ProjectDocumentsView.swift */,
+				F1E0D1112DF115CB00EF1083 /* ProjectConsultantsView.swift */,
+				F1E0D1332DF5EB4700EF1083 /* MyProjectsView.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		F14EBCAD2DEEAAF0004091FE /* Task Management */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBC7C2DEE4E96004091FE /* TaskListView.swift */,
+				F14EBC7E2DEE4EE6004091FE /* AddTaskView.swift */,
+				F1E0D1132DF2414400EF1083 /* TaskDetailView.swift */,
+				F1E0D1312DF5EB2E00EF1083 /* MyTasksView.swift */,
+			);
+			path = "Task Management";
+			sourceTree = "<group>";
+		};
+		F14EBCBA2DEEB2ED004091FE /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				F14EBCBB2DEEB2F7004091FE /* ConsultantPerformance.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		F1E0D1182DF34B1800EF1083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1E0D11D2DF34BF400EF1083 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D11E2DF34BFF00EF1083 /* LoginView.swift */,
+				F1E0D12F2DF3A95100EF1083 /* SignupView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F1E0D1242DF3A1F000EF1083 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D1252DF3A27B00EF1083 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1E0D1272DF3A38300EF1083 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D1282DF3A39100EF1083 /* AdminMainTabView.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		F1E0D12A2DF3A3CC00EF1083 /* Consultant */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D12B2DF3A3D900EF1083 /* ConsultantMainTabView.swift */,
+			);
+			path = Consultant;
+			sourceTree = "<group>";
+		};
+		F1E0D1392DF5EE0800EF1083 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0D13A2DF5EE1200EF1083 /* TaskViewModel.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F14EBC5D2DEE4B6F004091FE /* RJConsultingManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F14EBC712DEE4B73004091FE /* Build configuration list for PBXNativeTarget "RJConsultingManager" */;
+			buildPhases = (
+				F14EBC5A2DEE4B6F004091FE /* Sources */,
+				F14EBC5B2DEE4B6F004091FE /* Frameworks */,
+				F14EBC5C2DEE4B6F004091FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RJConsultingManager;
+			packageProductDependencies = (
+				F1E0D1192DF34B1800EF1083 /* FirebaseAuth */,
+				F1E0D11B2DF34B2200EF1083 /* FirebaseFirestore */,
+				F1E0D13E2DF744AB00EF1083 /* FirebaseFirestoreSwift-Beta */,
+				F1E0D1462DF9E04A00EF1083 /* FirebaseStorage */,
+			);
+			productName = RJConsultingManager;
+			productReference = F14EBC5E2DEE4B6F004091FE /* RJConsultingManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F14EBC562DEE4B6F004091FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F14EBC5D2DEE4B6F004091FE = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = F14EBC592DEE4B6F004091FE /* Build configuration list for PBXProject "RJConsultingManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F14EBC552DEE4B6F004091FE;
+			packageReferences = (
+				F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F14EBC5F2DEE4B6F004091FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F14EBC5D2DEE4B6F004091FE /* RJConsultingManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F14EBC5C2DEE4B6F004091FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14EBC692DEE4B73004091FE /* Preview Assets.xcassets in Resources */,
+				F14EBC662DEE4B73004091FE /* Assets.xcassets in Resources */,
+				F1E0D12E2DF3A6C800EF1083 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F14EBC5A2DEE4B6F004091FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14EBCAF2DEEAB58004091FE /* TopBarProfileButtonView.swift in Sources */,
+				F14EBC6B2DEE4B73004091FE /* Persistence.swift in Sources */,
+				F1E0D1492DF9E15200EF1083 /* DocumentModel.swift in Sources */,
+				F1E0D1432DF7781900EF1083 /* ConsultantModel.swift in Sources */,
+				F1E0D1122DF115CB00EF1083 /* ProjectConsultantsView.swift in Sources */,
+				F1E0D1302DF3A95100EF1083 /* SignupView.swift in Sources */,
+				F14EBC982DEE66FB004091FE /* IdentifiableURL.swift in Sources */,
+				F14EBC952DEE669C004091FE /* DocumentPreview.swift in Sources */,
+				F14EBC6E2DEE4B73004091FE /* RJConsultingManager.xcdatamodeld in Sources */,
+				F1E0D10A2DF1013300EF1083 /* ConsultantMultiPicker.swift in Sources */,
+				F1E0D12C2DF3A3D900EF1083 /* ConsultantMainTabView.swift in Sources */,
+				F14EBC852DEE5E6E004091FE /* ClientDetailView.swift in Sources */,
+				F1E0D10E2DF115AB00EF1083 /* ProjectTasksView.swift in Sources */,
+				F14EBC7F2DEE4EE6004091FE /* AddTaskView.swift in Sources */,
+				F14EBC832DEE5E58004091FE /* AddClientView.swift in Sources */,
+				F14EBC912DEE6545004091FE /* FileStorageManager.swift in Sources */,
+				F1E0D1142DF2414500EF1083 /* TaskDetailView.swift in Sources */,
+				F14EBC872DEE6103004091FE /* ConsultantListView.swift in Sources */,
+				F1E0D1382DF5EDE300EF1083 /* TaskModel.swift in Sources */,
+				F14EBC7B2DEE4E72004091FE /* AddProjectView.swift in Sources */,
+				F1E0D13D2DF5EF4800EF1083 /* ProjectModel.swift in Sources */,
+				F14EBC8B2DEE617B004091FE /* AddConsultantView.swift in Sources */,
+				F14EBC622DEE4B70004091FE /* RJConsultingManagerApp.swift in Sources */,
+				F14EBCBC2DEEB2F7004091FE /* ConsultantPerformance.swift in Sources */,
+				F14EBCA02DEE6961004091FE /* DashboardButton.swift in Sources */,
+				F14EBC9E2DEE6951004091FE /* SummaryCard.swift in Sources */,
+				F14EBC812DEE5E34004091FE /* ClientListView.swift in Sources */,
+				F1E0D1102DF115BE00EF1083 /* ProjectDocumentsView.swift in Sources */,
+				F14EBC9B2DEE692C004091FE /* DashboardView.swift in Sources */,
+				F14EBCA82DEEA991004091FE /* ProfileView.swift in Sources */,
+				F14EBCB12DEEAE34004091FE /* MainTabView.swift in Sources */,
+				F14EBC792DEE4DF7004091FE /* ProjectListView.swift in Sources */,
+				F1E0D1342DF5EB4700EF1083 /* MyProjectsView.swift in Sources */,
+				F1E0D1322DF5EB2E00EF1083 /* MyTasksView.swift in Sources */,
+				F1E0D13B2DF5EE1200EF1083 /* TaskViewModel.swift in Sources */,
+				F14EBC762DEE4DC1004091FE /* ProjectViewModel.swift in Sources */,
+				F1E0D11F2DF34BFF00EF1083 /* LoginView.swift in Sources */,
+				F1E0D1412DF74D8300EF1083 /* ClientModel.swift in Sources */,
+				F14EBC932DEE6566004091FE /* DocumentPicker.swift in Sources */,
+				F14EBC7D2DEE4E96004091FE /* TaskListView.swift in Sources */,
+				F1E0D10C2DF10E2000EF1083 /* EditProjectView.swift in Sources */,
+				F1E0D1292DF3A39100EF1083 /* AdminMainTabView.swift in Sources */,
+				F1E0D14B2DFB943E00EF1083 /* ConsultantDetailView.swift in Sources */,
+				F1E0D1082DF0F1F800EF1083 /* ProjectDetailView.swift in Sources */,
+				F1E0D1262DF3A27B00EF1083 /* AuthViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F14EBC6F2DEE4B73004091FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F14EBC702DEE4B73004091FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F14EBC722DEE4B73004091FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RJConsultingManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 67YQYA3GH6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-RJ.RJConsultingManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F14EBC732DEE4B73004091FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RJConsultingManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 67YQYA3GH6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-RJ.RJConsultingManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F14EBC592DEE4B6F004091FE /* Build configuration list for PBXProject "RJConsultingManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14EBC6F2DEE4B73004091FE /* Debug */,
+				F14EBC702DEE4B73004091FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F14EBC712DEE4B73004091FE /* Build configuration list for PBXNativeTarget "RJConsultingManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14EBC722DEE4B73004091FE /* Debug */,
+				F14EBC732DEE4B73004091FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1E0D1192DF34B1800EF1083 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F1E0D11B2DF34B2200EF1083 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F1E0D13E2DF744AB00EF1083 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		F1E0D1462DF9E04A00EF1083 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1E0D1172DF3475900EF1083 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F14EBC6C2DEE4B73004091FE /* RJConsultingManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F14EBC6D2DEE4B73004091FE /* RJConsultingManager.xcdatamodel */,
+			);
+			currentVersion = F14EBC6D2DEE4B73004091FE /* RJConsultingManager.xcdatamodel */;
+			path = RJConsultingManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F14EBC562DEE4B6F004091FE /* Project object */;
+}
